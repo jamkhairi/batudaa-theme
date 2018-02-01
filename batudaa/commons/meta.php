@@ -6,7 +6,7 @@
 <meta name='viewport' content='width=device-width, initial-scale=1' />
 <meta name='google' content='notranslate' />
 <meta name='theme' content='batudaa' />
-<meta name='theme:version' content='1.1' />
+<meta name='theme:version' content='1.1.1' />
 <meta name='theme:url' content='http://github.com/batudaa/batudaa-theme' />
 <meta name='keywords' content="sid, sistem informasi desa, web, blog, informasi, website, batudaa, desa, kecamatan, kabupaten, indonesia, kampung, <?php echo $desa['nama_desa']; ?>, <?php echo $desa['nama_kecamatan']; ?>, <?php echo $desa['nama_kabupaten']; ?>" />
 <meta property="og:site_name" content="<?php echo $desa_title ?>"/>
