@@ -36,15 +36,15 @@
             <ul class="nav navbar-nav navbar-right">
 				<?php foreach($menu_atas as $data){?>
 					<?php if(count($data['submenu'])>0): ?>
-						<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="<?php echo site_url()."first/".$data['link']?>"><?php echo $data['nama'] . " <i class='fa fa-angle-down'></i>"; ?></a>
+						<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="<?php echo $data['link']?>"><?php echo $data['nama'] . " <i class='fa fa-angle-down'></i>"; ?></a>
 							<ul class="dropdown-menu">
 								<?php foreach($data['submenu'] as $submenu): ?>
-									<li><a href="<?php echo site_url()."first/".$submenu['link']?>"><?php echo $submenu['nama']?></a></li>
+									<li><a href="<?php echo $submenu['link']?>"><?php echo $submenu['nama']?></a></li>
 								<?php endforeach; ?>
 							</ul>
 						</li>
 					<?php else: ?>
-						<li class='$item[status]'><a href="<?php echo site_url()."first/".$data['link']?>"><?php echo $data['nama'];?></a></li>
+						<li class='$item[status]'><a href="<?php echo $data['link']?>"><?php echo $data['nama'];?></a></li>
 					<?php endif; ?>
 				<?php }?>
 				<li class='hidden-xs'><a href='javascript:void(0)' id='btnSearch' class="<?php echo $s_display; ?>"><i class='fa fa-search'></i></a></li>
